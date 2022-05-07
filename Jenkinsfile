@@ -10,6 +10,9 @@ pipeline{
         // 流水线的所有阶段
         // 1、编译
         stage('代码编译'){
+        agent{
+            docker 'maven:3-alpine'
+            }
             steps{
                 echo "代码编译"
                 echo "代码编译111"
@@ -39,3 +42,4 @@ pipeline{
         }
 	}
 }
+
