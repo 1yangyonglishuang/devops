@@ -20,7 +20,6 @@ pipeline{
             steps{
                 echo "代码测试"
             }
-
         }
         // 3、打包
         stage('打包'){
