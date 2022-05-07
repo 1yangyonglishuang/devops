@@ -12,6 +12,7 @@ pipeline{
         stage('代码编译'){
             steps{
                 echo "代码编译"
+                echo "代码编译111"
                 echo "${hello}"
             }
 
@@ -35,7 +36,6 @@ pipeline{
             steps{
                 echo "部署"
             }
-
         }
 	}
 }
