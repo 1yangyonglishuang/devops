@@ -3,12 +3,16 @@
 pipeline{
     // 任何代理可用就可以执行
     agent any
+    environment{
+    hello="hello jenkins"
+    }
     stages{
         // 流水线的所有阶段
         // 1、编译
         stage('代码编译'){
             steps{
                 echo "代码编译"
+                echo "${hello}"
             }
 
         }
