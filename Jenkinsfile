@@ -3,8 +3,6 @@
 pipeline{
     // 任何代理可用就可以执行
     agent any
-
-    environment
     stages{
         // 流水线的所有阶段
         // 1、编译
